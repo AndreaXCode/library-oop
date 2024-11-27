@@ -1,5 +1,6 @@
 package org.ies.library.model;
 
+import javax.swing.plaf.PanelUI;
 import java.util.Arrays;
 import java.util.Objects;
 
@@ -13,6 +14,61 @@ public class Library {
         this.name = name;
         this.libros = libros;
     }
+
+    //MÉTODOS
+
+    //hasAuthor(authorNif): dado un NIF devuelve si hay algún libro de ese autor
+    public  Autor hasAuthor(String nif){
+        for (Book libro: libros){
+            if (libro.getAutores(nif)){
+
+            }
+        }
+
+        return ;
+
+    }
+
+
+    //countBooks(authroNif): dado un NIF devuelve el número de libros del autor
+    public int countBooks(String autorNif){
+        int count = 0;
+        for (Book libro: libros){
+            if (libro.hasAutor(autorNif)){
+                count++;
+            }
+        }
+        return count;
+
+    }
+
+    //countYearBooks(year): dado un año, devuelve el número de libros de ese año.
+    public int countYearBooks(int year){
+        int count = 0;
+        for (Book libro: libros){
+            if (libro.getyear()==year){
+
+                count++;
+            }
+
+        }
+        return count;
+    }
+
+
+    //findBook(isbn): dado un ISBN, devuelve el libro con ese ISBN. Si no lo encuentra, devuelve null
+    public Book findBook(String isbn){
+        for (Book libro: libros){
+            if (libro.getIsbn().equals(isbn)){
+
+                return libro;
+            }
+
+        }
+        return null;
+    }
+
+
 
     public String getName() {
         return name;

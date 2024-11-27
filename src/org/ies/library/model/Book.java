@@ -20,6 +20,20 @@ public class Book {
 
     //METODOS
 
+    // hasBook(isbn): dado un ISBN devuelve si el libro existe en la biblioteca
+
+    public boolean hasAutor(String nif){
+
+        for (Autor autor: autores){
+            if (autor.getNif().equals(nif)){
+                return true;
+            }
+        }
+        return false;
+    }
+
+
+
     public String getIsbn() {
         return isbn;
     }
@@ -36,7 +50,7 @@ public class Book {
         this.title = title;
     }
 
-    public int getAge() {
+    public int getyear() {
         return year;
     }
 
@@ -44,7 +58,7 @@ public class Book {
         this.year = year;
     }
 
-    public Autor[] getAutores() {
+    public boolean getAutores(String nif) {
         return autores;
     }
 
