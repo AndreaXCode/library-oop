@@ -1,6 +1,5 @@
 package org.ies.library.components;
 
-import org.ies.library.model.Autor;
 import org.ies.library.model.Book;
 import org.ies.library.model.Library;
 
@@ -24,7 +23,7 @@ public class LibraryReader {
         System.out.println("Introduce el nombre del libro");
         String name = scanner.nextLine();
 
-        System.out.println("Cuantos libros tiene la b");
+        System.out.println("Cuantos libros tiene la biblioteca");
         int size = scanner.nextInt();
         scanner.nextLine();
 
@@ -44,9 +43,6 @@ public class LibraryReader {
                 libros
 
         );
-
-
-
 
 
     }
