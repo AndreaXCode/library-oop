@@ -53,7 +53,7 @@ public class Library {
     // dado un nif  --> creo una variable de tipo String llamada nif
 
     // como quiero devolver un numero creo uan variable llamada count que empieza desde 0.
-    // hago un for each, y pongo el array Book y su contenido.
+    // hago un for each, y pongo el array libros.
     // Luego pongo un if para que cada vez que el NIF sea de un autor se incremente a count
     // despues cuando termine el bucle se devolverá el número total de libros usando return count;
 
@@ -69,15 +69,16 @@ public class Library {
     }
 
 
-
     //countYearBooks(year): dado un año, devuelve el número de libros de ese año.
 
     // dado un año  --> creo una variable de tipo int llamada year
 
-    // como quiero devolver un numero creo uan variable llamada count que empieza desde 0.
-    // hago un for each, y pongo el array Book y su contenido.
-    // Luego pongo un if con la condicion de que si el año del libro es igual al que hemos declarado se incremente a count
-    // despues cuando termine el bucle se devolverá el número total de libros d eese año usando return count;
+    // como quiero devolver un numero creo uan variable llamada count que empiece desde 0.
+    // hago un for each, y pongo el array libros.
+    // Luego pongo un if con la condicion de que si el año del libro es igual al que hemos declarado, se incremente a count
+    // despues cuando termine el bucle se devolverá el número total de libros de ese año usando return count;
+
+    // Comparar una variable de tipo int es con ==   y de tipo String con equals
 
 
     public int countYearBooks(int year){
@@ -99,7 +100,7 @@ public class Library {
 
     // dado un isbn  --> creo una variable de tipo String llamada isbn
 
-    // hago un for each, y pongo el array Book y su contenido.
+    // hago un for each, y pongo el array libros.
     // Luego pongo un if con la condicion de que si el isbn introducido es igual que el isbn de algun libro, devuelva ese libro con return libro.
     // despues cuando termine el bucle si no se encuetra ningun libro con ese isbn se devuelve null usando return null.
     
