@@ -83,6 +83,7 @@ public class Library {
 
     public int countYearBooks(int year){
         int count = 0;
+        //for (var libro: libros){   también vale así
         for (Book libro: libros){
             if (libro.getyear()==year){
 
